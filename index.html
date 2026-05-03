@@ -3,629 +3,482 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FreeElizabethHolmes.com — Failure Is Not Fraud.</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5E4N8Y2MH"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-C5E4N8Y2MH');</script>
-<meta name="description" content="Elizabeth Holmes is serving 11.25 years in federal prison for a vision that has since been proven right. The sentence is disproportionate. The injustice is real.">
-<meta property="og:title" content="FreeElizabethHolmes.com — Failure Is Not Fraud.">
-<meta property="og:description" content="She saw the future. They punished her for it.">
-<meta property="og:url" content="https://freeelizabetholmes.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Mind of Myers</title>
+
+<meta property="og:title" content="Mind of Myers">
+<meta property="og:description" content="Entrepreneur. Novelist. Builder of things that don't exist yet.">
+<meta property="og:image" content="https://mindofmyers.com/og-image.png">
+<meta property="og:url" content="https://mindofmyers.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mind of Myers">
+<meta name="twitter:description" content="Entrepreneur. Novelist. Builder of things that don't exist yet.">
+<meta name="twitter:image" content="https://mindofmyers.com/og-image.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SHFYM489TT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SHFYM489TT');
+</script>
+
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --red: #8B1A1A;
-    --red-dark: #6e1414;
-    --red-light: #fdf1f1;
-    --text: #111111;
-    --muted: #555555;
-    --light: #888888;
-    --border: #d8d3cb;
-    --border-light: #ede9e2;
-    --bg: #f9f7f4;
-    --bg-soft: #f3f0eb;
-    --bg-dark: #141008;
-    --white: #ffffff;
-    --ink: #1a1208;
-  }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'EB Garamond', serif; background: var(--bg); color: var(--text); line-height: 1.7; }
-  a { color: var(--red); text-decoration: none; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #080a0f; min-height: 100vh; }
 
-  /* ── NAV ── */
-  nav {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 1rem 3rem; background: var(--ink); position: sticky; top: 0; z-index: 100;
-    flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid #2a2010;
-  }
-  .nav-left { display: flex; align-items: baseline; gap: 1.5rem; }
-  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #f5efe6; }
-  .nav-tagline { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8a7a60; }
-  .nav-links { display: flex; gap: 2rem; }
-  .nav-links a { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: #8a7a60; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
-  .nav-links a:hover { color: #f5efe6; }
+.sw {
+  background: #0f1117;
+  max-width: 960px;
+  margin: 2rem auto;
+  border-radius: 14px;
+  overflow: hidden;
+  color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+}
 
-  /* ── MASTHEAD ── */
-  .masthead {
-    background: var(--ink);
-    padding: 0 3rem 5rem;
-    border-bottom: 3px solid var(--red);
-  }
-  .masthead-rule { border: none; border-top: 0.5px solid #2a2010; margin-bottom: 3.5rem; }
-  .masthead-grid { display: grid; grid-template-columns: 1fr 340px; gap: 4rem; align-items: start; }
-  .masthead-eyebrow { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; }
-  .masthead h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 88px; font-weight: 700; line-height: 0.92;
-    color: #f5efe6; letter-spacing: -0.02em; margin-bottom: 1.5rem;
-    text-transform: uppercase;
-  }
-  .masthead h1 em { font-style: italic; color: var(--red); text-transform: none; font-weight: 400; font-size: 96px; }
-  .masthead-tagline { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; color: var(--red); margin-bottom: 1rem; padding-left: 1.25rem; border-left: 2px solid var(--red); }
-  .masthead-hook { font-family: 'Inter', sans-serif; font-size: 13px; color: #8a7a60; padding-left: 1.25rem; margin-bottom: 2rem; letter-spacing: 0.04em; }
-  .masthead-sub { font-family: 'EB Garamond', serif; font-size: 18px; color: #b0a080; line-height: 1.75; margin-bottom: 2.5rem; }
-  .masthead-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero { padding: 3rem 2.5rem 2rem; border-bottom: 0.5px solid rgba(255,255,255,0.08); }
+.hero-ey { font-size: 11px; letter-spacing: 0.14em; color: #7a8899; text-transform: uppercase; margin-bottom: 0.5rem; }
+.hero-name { font-size: 40px; font-weight: 500; color: #f0f0f0; line-height: 1.1; margin-bottom: 0.4rem; }
+.hero-name span { color: #4fc8a0; }
+.hero-sub { font-size: 14px; color: #7a8899; max-width: 480px; line-height: 1.6; font-style: italic; }
 
-  /* ── STATS BAR ── */
-  .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--red); }
-  .stat-block { padding: 2rem 1.5rem; border-right: 1px solid rgba(255,255,255,0.15); text-align: center; }
-  .stat-block:last-child { border-right: none; }
-  .stat-block-num { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 6px; }
-  .stat-block-label { font-family: 'Inter', sans-serif; font-size: 11px; color: rgba(255,255,255,0.75); line-height: 1.5; letter-spacing: 0.04em; }
+.tab-nav { display: flex; padding: 0 2.5rem; background: #0f1117; border-bottom: 0.5px solid rgba(255,255,255,0.08); overflow-x: auto; }
+.tab-btn { padding: 0.85rem 1.2rem; font-size: 13px; color: #7a8899; background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; font-family: inherit; }
+.tab-btn.active { color: #4fc8a0; border-bottom-color: #4fc8a0; }
+.tab-btn:hover:not(.active) { color: #c0c8d0; }
 
-  /* ── MASTHEAD SIDEBAR ── */
-  .masthead-sidebar { padding-top: 0.5rem; }
-  .sidebar-card { border: 0.5px solid #2a2010; border-radius: 2px; padding: 1.5rem; margin-bottom: 1.25rem; background: #1a1208; }
-  .sidebar-card-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; }
-  .sidebar-card-text { font-family: 'EB Garamond', serif; font-size: 15px; color: #b0a080; line-height: 1.6; }
-  .sidebar-card-big { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 700; color: #f5efe6; line-height: 1; margin-bottom: 4px; }
+.tab-content { padding: 2rem 2.5rem; display: none; flex: 1; }
+.tab-content.active { display: block; }
+.sec-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #7a8899; margin-bottom: 0.75rem; }
+.cat-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #4a5560; margin-bottom: 0.75rem; margin-top: 1.5rem; font-weight: 500; padding-left: 2px; }
 
-  /* ── SECTION BASE ── */
-  .section { padding: 4rem 3rem; border-bottom: 0.5px solid var(--border); }
-  .section-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
-  .section-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 400; color: var(--border); line-height: 1; }
-  .section-eyebrow { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); }
-  .section-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 600; color: var(--text); line-height: 1.2; margin-top: 4px; }
+.cards-3col { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 0.5rem; }
 
-  /* ── ARGUMENTS ── */
-  .args-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-  .arg { padding: 2rem; border-right: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
-  .arg:nth-child(even) { border-right: none; }
-  .arg:nth-last-child(-n+2) { border-bottom: none; }
-  .arg-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 400; color: var(--red); opacity: 0.2; line-height: 1; margin-bottom: 0.5rem; }
-  .arg-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 0.75rem; line-height: 1.25; }
-  .arg-body { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--muted); line-height: 1.75; }
+.card {
+  background: #1a1d25;
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 1.1rem 1.1rem 1rem;
+  transition: border-color 0.15s, transform 0.15s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+.card:hover { border-color: rgba(79,200,160,0.5); transform: translateY(-2px); }
+.card-logo { height: 52px; display: flex; align-items: center; margin-bottom: 0.8rem; }
+.card-logo img { height: 44px; max-width: 180px; object-fit: contain; }
+.card-desc { font-size: 11.5px; color: #5a6470; line-height: 1.5; }
+.card-url { font-size: 11px; color: #4fc8a0; margin-top: 0.55rem; opacity: 0.7; }
+.card-tagline { font-size: 9.5px; letter-spacing: 0.1em; color: #4a5560; text-transform: uppercase; margin-top: 0.4rem; }
 
-  /* ── SENTENCE TABLE ── */
-  .sentence-section { background: var(--bg-soft); }
-  .compare-table { width: 100%; border-collapse: collapse; margin-top: 2rem; font-family: 'Inter', sans-serif; }
-  .compare-table th { text-align: left; padding: 12px 16px; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-bottom: 1px solid var(--border); }
-  .compare-table td { padding: 16px; border-bottom: 0.5px solid var(--border-light); font-size: 14px; color: var(--muted); vertical-align: top; line-height: 1.5; }
-  .compare-table td:first-child { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--text); }
-  .compare-table .sentence-num { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: var(--red); }
-  .compare-table tr.highlight td { background: var(--red-light); }
-  .compare-table tr.highlight td:first-child { font-weight: 600; }
+.gp360 { font-size: 13px; font-weight: 500; color: #f0f0f0; line-height: 1.2; }
+.gp360 span { color: #e63946; }
 
-  /* ── PULLQUOTE ── */
-  .pullquote { background: var(--ink); padding: 3rem; margin: 2.5rem 0; border-left: 3px solid var(--red); }
-  .pullquote p { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-style: italic; color: #f5efe6; line-height: 1.55; }
+.yama-logo { font-size: 12.5px; font-weight: 500; color: #d4a94a; line-height: 1.3; }
+.yama-logo small { display: block; font-size: 9.5px; color: #8a7040; letter-spacing: 0.09em; text-transform: uppercase; margin-top: 2px; font-weight: 400; }
 
-  /* ── MEDIA GRID ── */
-  .media-flip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
-  .media-flip-card { border: 0.5px solid var(--border); border-radius: 4px; overflow: hidden; }
-  .media-flip-top { background: var(--ink); padding: 1.25rem 1.5rem; }
-  .media-flip-source { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--red); margin-bottom: 8px; }
-  .media-flip-before { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: #f5efe6; line-height: 1.4; }
-  .media-flip-bottom { background: var(--bg-soft); padding: 1rem 1.5rem; }
-  .media-flip-label { font-family: 'Inter', sans-serif; font-size: 10px; color: var(--red); font-weight: 600; letter-spacing: 0.1em; margin-bottom: 6px; }
-  .media-flip-after { font-family: 'EB Garamond', serif; font-size: 15px; color: var(--muted); line-height: 1.5; }
+.jony-logo { font-size: 12.5px; font-weight: 500; color: #c0c8d4; line-height: 1.3; }
+.jony-logo small { display: block; font-size: 9.5px; color: #5a6470; letter-spacing: 0.09em; text-transform: uppercase; margin-top: 2px; font-weight: 400; }
 
-  /* ── PETITION ── */
-  .petition { background: var(--bg-dark); padding: 5rem 3rem; border-bottom: 0.5px solid #2a2010; }
-  .petition-inner { max-width: 640px; }
-  .petition-eyebrow { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
-  .petition h2 { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 700; color: #f5efe6; line-height: 1.1; margin-bottom: 1rem; }
-  .petition-sub { font-family: 'EB Garamond', serif; font-size: 18px; color: #8a7a60; line-height: 1.7; margin-bottom: 2rem; }
-  .petition-counter { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #f5efe6; margin-bottom: 1.5rem; display: none; }
-  .petition-form { display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem; }
-  .petition-form input, .petition-form textarea {
-    background: #1e1508; border: 0.5px solid #3a2a10; color: #f5efe6;
-    padding: 13px 16px; font-family: 'EB Garamond', serif; font-size: 16px;
-    border-radius: 2px; outline: none; transition: border-color 0.2s;
-  }
-  .petition-form input::placeholder, .petition-form textarea::placeholder { color: #4a3a20; }
-  .petition-form input:focus, .petition-form textarea:focus { border-color: var(--red); }
-  .petition-form .full { grid-column: 1 / -1; }
-  .petition-form textarea { resize: vertical; min-height: 90px; }
-  .petition-submit {
-    grid-column: 1 / -1; background: var(--red); color: #fff; border: none;
-    padding: 16px 32px; font-family: 'Inter', sans-serif; font-size: 12px;
-    font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
-    border-radius: 2px; cursor: pointer; transition: background 0.2s;
-  }
-  .petition-submit:hover { background: var(--red-dark); }
-  .petition-message { font-family: 'EB Garamond', serif; font-size: 18px; margin-top: 1.25rem; color: #90c090; display: none; }
+.wicket-logo { font-size: 13px; font-weight: 500; line-height: 1.3; }
+.wicket-logo .mj { color: #c8a84b; }
+.wicket-logo .wk { color: #e8e8e8; }
+.wicket-logo small { display: block; font-size: 9.5px; color: #4a7a4a; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; font-weight: 400; }
 
-  /* ── REP FINDER ── */
-  .rep-section { background: var(--bg-soft); }
-  .rep-intro { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--muted); line-height: 1.75; max-width: 600px; margin-bottom: 2rem; }
-  .zip-row { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 2.5rem; flex-wrap: wrap; }
-  .zip-input {
-    border: 0.5px solid var(--border); padding: 13px 16px;
-    font-family: 'EB Garamond', serif; font-size: 16px;
-    border-radius: 2px; outline: none; width: 180px; background: var(--white);
-  }
-  .zip-input:focus { border-color: var(--red); }
-  .zip-btn {
-    background: var(--red); color: #fff; border: none; padding: 13px 28px;
-    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600;
-    letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; cursor: pointer;
-  }
-  .zip-btn:hover { background: var(--red-dark); }
-  .rep-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-  .rep-card { border: 0.5px solid var(--border); border-radius: 4px; padding: 1.5rem; display: none; background: var(--white); border-top: 3px solid var(--red); }
-  .rep-card.visible { display: block; }
-  .rep-card-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--red); margin-bottom: 8px; }
-  .rep-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; }
-  .rep-card-body { font-family: 'EB Garamond', serif; font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 1.25rem; }
-  .rep-card-note { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--light); line-height: 1.6; margin-bottom: 1.25rem; font-style: italic; }
-  .rep-link {
-    display: inline-block; padding: 10px 18px; background: var(--red); color: #fff;
-    border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 11px;
-    font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  }
-  .rep-link:hover { background: var(--red-dark); }
+.card-kyzmyt { background: #0d1122; border-color: rgba(180,150,100,0.2); }
+.card-kyzmyt:hover { border-color: rgba(200,168,75,0.5); }
+.kyzmyt-logo { font-size: 17px; font-weight: 500; line-height: 1.2; letter-spacing: 0.01em; }
+.kyzmyt-logo .kw { color: #f0f0f0; }
+.kyzmyt-logo .kg { color: #c8924a; }
+.kyzmyt-logo small { display: block; font-size: 9.5px; color: #6a7a9a; letter-spacing: 0.06em; font-style: italic; font-weight: 400; margin-top: 3px; text-transform: none; }
 
-  /* ── NEWS ── */
-  .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
-  .news-card { border: 0.5px solid var(--border); border-radius: 4px; padding: 1.5rem; background: var(--white); border-top: 2px solid var(--border); transition: border-top-color 0.2s; }
-  .news-card:hover { border-top-color: var(--red); }
-  .news-source { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--light); margin-bottom: 8px; }
-  .news-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--text); line-height: 1.35; margin-bottom: 10px; }
-  .news-title a { color: var(--text); }
-  .news-title a:hover { color: var(--red); }
-  .news-date { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--light); }
-  .news-empty { font-family: 'EB Garamond', serif; font-size: 17px; color: var(--muted); font-style: italic; }
+.golazo-logo { font-size: 15px; font-weight: 700; line-height: 1.1; letter-spacing: 0.02em; }
+.golazo-logo .g1 { color: #f0f0f0; }
+.golazo-logo .g2 { color: #5bb8f5; }
+.golazo-logo small { display: block; font-size: 9px; color: #2d6e4a; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 3px; font-weight: 400; }
+.card-golazo { background: #0a1a0f; border-color: rgba(45,110,74,0.3); }
+.card-golazo:hover { border-color: rgba(91,184,100,0.5); }
 
-  /* ── CTA ── */
-  .final-cta { background: var(--ink); padding: 6rem 3rem; text-align: center; border-top: 3px solid var(--red); }
-  .final-cta h2 { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 700; color: #f5efe6; line-height: 1.1; margin-bottom: 1.25rem; }
-  .final-cta p { font-family: 'EB Garamond', serif; font-size: 19px; color: #8a7a60; line-height: 1.75; max-width: 600px; margin: 0 auto 2.5rem; }
-  .cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.silque-logo { display: flex; align-items: center; gap: 10px; }
+.silque-logo img { height: 40px; width: 40px; object-fit: cover; border-radius: 50%; }
+.silque-logo-text { font-size: 15px; font-weight: 500; line-height: 1.2; }
+.silque-logo-text .s1 { color: #c8a84b; }
+.silque-logo-text .s2 { color: #e8e0d0; }
+.silque-logo-text small { display: block; font-size: 9px; color: #6a5a3a; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; font-weight: 400; }
+.card-silque { background: #120e08; border-color: rgba(180,140,60,0.2); }
+.card-silque:hover { border-color: rgba(200,168,75,0.5); }
 
-  /* ── BUTTONS ── */
-  .btn { padding: 14px 30px; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.2s; }
-  .btn-primary { background: var(--red); color: #fff; border: 1px solid var(--red); }
-  .btn-primary:hover { background: var(--red-dark); }
-  .btn-outline { background: transparent; color: #f5efe6; border: 1px solid #3a2a10; }
-  .btn-outline:hover { border-color: #f5efe6; }
-  .btn-outline-dark { background: transparent; color: var(--text); border: 0.5px solid var(--border); }
-  .btn-outline-dark:hover { background: var(--bg-soft); }
+.kayfabe-logo { font-size: 14px; font-weight: 800; line-height: 1.1; letter-spacing: 0.04em; text-transform: uppercase; }
+.kayfabe-logo .k1 { color: #f5a623; }
+.kayfabe-logo .k2 { color: #e040a0; }
+.kayfabe-logo small { display: block; font-size: 9px; color: #7a4a7a; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 3px; font-weight: 400; }
+.card-kayfabe { background: #160a1a; border-color: rgba(180,60,160,0.2); }
+.card-kayfabe:hover { border-color: rgba(224,64,160,0.5); }
 
-  /* ── FOOTER ── */
-  footer { background: var(--ink); padding: 2rem 3rem; border-top: 0.5px solid #2a2010; font-family: 'Inter', sans-serif; font-size: 11px; color: #4a3a20; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; letter-spacing: 0.06em; }
+.lulz-logo { font-size: 16px; font-weight: 700; line-height: 1.1; letter-spacing: 0.06em; font-family: monospace; }
+.lulz-logo .l1 { color: #00ff41; }
+.lulz-logo .l2 { color: #ff2d2d; }
+.lulz-logo small { display: block; font-size: 9px; color: #006620; letter-spacing: 0.08em; font-style: italic; margin-top: 4px; font-weight: 400; font-family: monospace; text-transform: none; }
+.card-lulz { background: #030b03; border-color: rgba(0,255,65,0.15); }
+.card-lulz:hover { border-color: rgba(0,255,65,0.45); }
+.card-lulz .card-desc { color: #3a6640; }
+.card-lulz .card-url { color: #00ff41; }
 
-  /* ── MOBILE ── */
-  @media (max-width: 768px) {
-    nav { padding: 1rem 1.5rem; }
-    .nav-tagline { display: none; }
-    .nav-links { display: none; }
-    .masthead { padding: 0 1.5rem 3rem; }
-    .masthead-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .masthead h1 { font-size: 52px; }
-    .masthead h1 em { font-size: 58px; }
-    .masthead-sidebar { display: none; }
-    .stats-bar { grid-template-columns: 1fr 1fr; }
-    .stat-block:nth-child(2) { border-right: none; }
-    .stat-block:nth-child(3) { border-right: 0.5px solid rgba(255,255,255,0.15); }
-    .section { padding: 3rem 1.5rem; }
-    .args-grid { grid-template-columns: 1fr; }
-    .arg { border-right: none; }
-    .arg:nth-last-child(-n+2) { border-bottom: 0.5px solid var(--border); }
-    .arg:last-child { border-bottom: none; }
-    .media-flip-grid { grid-template-columns: 1fr; }
-    .petition { padding: 3rem 1.5rem; }
-    .petition h2 { font-size: 36px; }
-    .petition-form { grid-template-columns: 1fr; }
-    .rep-section { padding: 3rem 1.5rem; }
-    .rep-cards { grid-template-columns: 1fr; }
-    .final-cta { padding: 4rem 1.5rem; }
-    .final-cta h2 { font-size: 36px; }
-    footer { padding: 1.5rem; }
-    .pullquote { padding: 2rem 1.5rem; }
-    .pullquote p { font-size: 20px; }
-  }
+/* ── SCIENCE SILENCED ── */
+.scisilenced-logo { font-size: 14px; font-weight: 700; line-height: 1.15; letter-spacing: 0.04em; }
+.scisilenced-logo .ss-science { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: #7a5a3a; font-weight: 400; display: block; margin-bottom: 2px; font-family: 'Courier New', monospace; }
+.scisilenced-logo .ss-word { color: #c8b89a; position: relative; display: inline-block; }
+.scisilenced-logo .ss-strike { position: absolute; top: 50%; left: -2px; right: -2px; height: 2px; background: #8b1010; transform: translateY(-50%); border-radius: 1px; }
+.scisilenced-logo small { display: block; font-size: 9px; color: #6a4a2a; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; font-weight: 400; font-family: 'Courier New', monospace; }
+.card-scisilenced { background: #1c1408; border-color: rgba(139,16,16,0.25); position: relative; overflow: hidden; }
+.card-scisilenced::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 11px, rgba(139,16,16,0.04) 11px, rgba(139,16,16,0.04) 12px); pointer-events: none; }
+.card-scisilenced:hover { border-color: rgba(139,16,16,0.6); transform: translateY(-2px); }
+.card-scisilenced .card-desc { color: #7a5a3a; }
+.card-scisilenced .card-url { color: #8b1010; opacity: 0.85; }
+.card-scisilenced .card-tagline { color: #5a3a1a; }
+/* ── END SCIENCE SILENCED ── */
+
+/* ── PARDON JOHN KIRIAKOU ── */
+.pardon-logo { font-size: 11px; font-weight: 700; line-height: 1.3; letter-spacing: 0.18em; text-transform: uppercase; font-family: 'Georgia', serif; }
+.pardon-logo .p-pardon { color: #8b0000; font-size: 13px; display: block; letter-spacing: 0.22em; }
+.pardon-logo .p-name { color: #d4c9a8; font-size: 12px; display: block; letter-spacing: 0.1em; font-weight: 400; margin-top: 1px; }
+.pardon-logo small { display: block; font-size: 8.5px; color: #6a5a3a; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; font-weight: 400; font-style: italic; }
+.card-pardon { background: #120c04; border-color: rgba(139,0,0,0.3); position: relative; overflow: hidden; }
+.card-pardon::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 13px, rgba(139,0,0,0.03) 13px, rgba(139,0,0,0.03) 14px); pointer-events: none; }
+.card-pardon:hover { border-color: rgba(139,0,0,0.65); transform: translateY(-2px); }
+.card-pardon .card-desc { color: #7a6a4a; }
+.card-pardon .card-url { color: #8b0000; opacity: 0.9; }
+.card-pardon .card-tagline { color: #5a4a2a; font-style: italic; }
+/* ── END PARDON JOHN KIRIAKOU ── */
+
+/* ── FREE ELIZABETH HOLMES ── */
+.holmes-logo { font-size: 11px; font-weight: 700; line-height: 1.3; letter-spacing: 0.18em; text-transform: uppercase; font-family: 'Georgia', serif; }
+.holmes-logo .h-free { color: #8B1A1A; font-size: 13px; display: block; letter-spacing: 0.22em; }
+.holmes-logo .h-name { color: #d4c9c9; font-size: 12px; display: block; letter-spacing: 0.1em; font-weight: 400; margin-top: 1px; }
+.holmes-logo small { display: block; font-size: 8.5px; color: #7a5a5a; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; font-weight: 400; font-style: italic; }
+.card-holmes { background: #140808; border-color: rgba(139,26,26,0.3); position: relative; overflow: hidden; }
+.card-holmes::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 13px, rgba(139,26,26,0.03) 13px, rgba(139,26,26,0.03) 14px); pointer-events: none; }
+.card-holmes:hover { border-color: rgba(139,26,26,0.65); transform: translateY(-2px); }
+.card-holmes .card-desc { color: #7a5a5a; }
+.card-holmes .card-url { color: #8B1A1A; opacity: 0.9; }
+.card-holmes .card-tagline { color: #5a3a3a; font-style: italic; }
+/* ── END FREE ELIZABETH HOLMES ── */
+
+.card-cbnc { background: #0a1520; border-color: rgba(91,156,200,0.2); }
+.card-cbnc:hover { border-color: rgba(91,156,200,0.5); }
+.card-cbnc .card-desc { color: #4a6a7a; }
+.card-cbnc .card-url { color: #5ba8c8; }
+
+.books-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.book-card { display: flex; flex-direction: column; }
+.book-cover { width: 100%; aspect-ratio: 2/3; border-radius: 6px; margin-bottom: 0.85rem; overflow: hidden; }
+.book-cover img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; transition: transform 0.3s; }
+.book-cover img:hover { transform: scale(1.03); }
+.book-title { font-size: 14px; font-weight: 500; color: #dde4ec; margin-bottom: 0.3rem; }
+.book-desc { font-size: 12px; color: #5a6470; line-height: 1.5; }
+
+.kpop-intro { font-size: 13px; color: #7a8899; margin-bottom: 0.5rem; line-height: 1.7; max-width: 560px; }
+.bucket-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem; margin-top: 1.5rem; font-weight: 500; }
+.bucket-label-bts { color: #9b7fe8; }
+.bucket-label-hybe { color: #5b9cf6; }
+.bucket-label-kpop { color: #d46fa0; }
+
+.card-bts { background: #16112a; border: 0.5px solid rgba(140,100,200,0.2); border-radius: 12px; padding: 1rem; transition: border-color 0.15s, transform 0.15s; text-decoration: none; color: inherit; display: block; }
+.card-bts:hover { border-color: rgba(155,127,232,0.6); transform: translateY(-2px); }
+.card-bts .kpop-name { color: #c9b8f0; }
+.card-bts .kpop-url { color: #7a6a9a; }
+
+.card-hybe { background: #0d1525; border: 0.5px solid rgba(80,120,200,0.2); border-radius: 12px; padding: 1rem; transition: border-color 0.15s, transform 0.15s; text-decoration: none; color: inherit; display: block; }
+.card-hybe:hover { border-color: rgba(91,156,246,0.6); transform: translateY(-2px); }
+.card-hybe .kpop-name { color: #90b8f0; }
+.card-hybe .kpop-url { color: #4a6a9a; }
+
+.card-kpop-gen { background: #250d1a; border: 0.5px solid rgba(200,80,140,0.2); border-radius: 12px; padding: 1rem; transition: border-color 0.15s, transform 0.15s; text-decoration: none; color: inherit; display: block; }
+.card-kpop-gen:hover { border-color: rgba(212,111,160,0.6); transform: translateY(-2px); }
+.card-kpop-gen .kpop-name { color: #f0a8c8; }
+.card-kpop-gen .kpop-url { color: #9a4a70; }
+
+.kpop-name { font-size: 13px; font-weight: 500; margin-bottom: 0.2rem; }
+.kpop-url { font-size: 10px; opacity: 0.8; }
+
+.about-text { font-size: 14px; color: #8a9499; line-height: 1.8; max-width: 560px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.25rem; }
+.tag { font-size: 11px; padding: 4px 12px; border-radius: 20px; background: #1a1d25; border: 0.5px solid rgba(255,255,255,0.08); color: #7a8899; }
+
+.footer { padding: 1.25rem 2.5rem; border-top: 0.5px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.footer-l { font-size: 11px; color: #3a4450; }
+.footer-e { font-size: 12px; color: #4fc8a0; opacity: 0.7; text-decoration: none; }
+.footer-e:hover { opacity: 1; }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-left">
-    <span class="nav-logo">FreeElizabethHolmes.com</span>
-    <span class="nav-tagline">Failure is not fraud.</span>
+<div class="sw">
+  <div class="hero">
+    <div class="hero-ey">mindofmyers.com</div>
+    <div class="hero-name">Mind of <span>Myers</span></div>
+    <div class="hero-sub">Entrepreneur. Novelist. Builder of things that don't exist yet.</div>
   </div>
-  <div class="nav-links">
-    <a href="#case">The Case</a>
-    <a href="#sentence">The Sentence</a>
-    <a href="#media">The Media</a>
-    <a href="#petition">Sign</a>
-    <a href="#rep">Contact Rep</a>
-    <a href="#news">News</a>
-  </div>
-</nav>
 
-<!-- MASTHEAD -->
-<div class="masthead">
-  <hr class="masthead-rule">
-  <div class="masthead-grid">
-    <div>
-      <p class="masthead-eyebrow">An Independent Advocacy Site</p>
-      <h1>She believed<br>in a vision.<br>That is not<br><em>a crime.</em></h1>
-      <p class="masthead-tagline">Failure is not fraud.</p>
-      <p class="masthead-hook">She saw the future. They punished her for it.</p>
-      <p class="masthead-sub">Elizabeth Holmes is serving 11.25 years in federal prison for a vision that has since been proven right. The sentence is disproportionate. The injustice is real.</p>
-      <div class="masthead-ctas">
-        <a href="#petition" class="btn btn-primary">Sign the Petition</a>
-        <a href="#case" class="btn btn-outline">Read the Case</a>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('tech',this)">Ventures</button>
+    <button class="tab-btn" onclick="switchTab('books',this)">Books</button>
+    <button class="tab-btn" onclick="switchTab('kpop',this)">K-Pop Network</button>
+    <button class="tab-btn" onclick="switchTab('about',this)">About</button>
+  </div>
+
+  <div id="tab-tech" class="tab-content active">
+    <div class="sec-label">Ventures &amp; Projects</div>
+
+    <div class="cat-label" style="margin-top:0;">Dating</div>
+    <div class="cards-3col">
+      <a class="card card-kyzmyt" href="https://kyzmyt.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="kyzmyt-logo"><span class="kw">Kyzm</span><span class="kg">yt</span><small>like kismet — but real.</small></div></div>
+        <div class="card-desc">Fate-based dating platform. The world's first verified dating experience.</div>
+        <div class="card-url">kyzmyt.com</div>
+      </a>
+    </div>
+
+    <div class="cat-label">Marketplaces</div>
+    <div class="cards-3col">
+      <a class="card" href="https://xekie.com" target="_blank" rel="noopener">
+        <div class="card-logo"><img src="xekie-logo-wide.svg" alt="XEKIE"></div>
+        <div class="card-desc">Demand-side marketplace where buyers post what they want and sellers respond.</div>
+        <div class="card-tagline">TRADE DIFFERENT</div>
+        <div class="card-url">xekie.com</div>
+      </a>
+      <a class="card card-silque" href="https://silqueroad.com" target="_blank" rel="noopener">
+        <div class="card-logo">
+          <div class="silque-logo">
+            <img src="silqueroad-logo.png" alt="Silque Road">
+            <div class="silque-logo-text"><span class="s1">Silque</span> <span class="s2">Road</span><small>The Bazaar is Open</small></div>
+          </div>
+        </div>
+        <div class="card-desc">We carry what the internet won't. Legal products, vetted sellers, 100% anonymous checkout. Pay with crypto.</div>
+        <div class="card-url">silqueroad.com</div>
+      </a>
+    </div>
+
+    <div class="cat-label">Sports</div>
+    <div class="cards-3col">
+      <a class="card card-golazo" href="https://golazoglobal.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="golazo-logo"><span class="g1">GOLAZO</span> <span class="g2">GLOBAL</span><small>Every Goal. Every League. Every Nation.</small></div></div>
+        <div class="card-desc">AI-curated global football hub — news, scores, standings, and stats across 12 leagues. World Cup 2026 all summer.</div>
+        <div class="card-url">golazoglobal.com</div>
+      </a>
+      <a class="card" href="https://majesticwicket.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="wicket-logo"><span class="mj">Majestic</span><span class="wk">Wicket</span><small>Where the World Watches Cricket</small></div></div>
+        <div class="card-desc">AI-curated global cricket hub covering 20+ leagues, every nation, 4x daily updates.</div>
+        <div class="card-url">majesticwicket.com</div>
+      </a>
+      <a class="card card-kayfabe" href="https://kayfabeheat.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="kayfabe-logo"><span class="k1">Kayfabe</span> <span class="k2">Heat</span><small>Work . Shoot . Heat</small></div></div>
+        <div class="card-desc">Pro wrestling news aggregator — AI-curated, updated 4x daily. Work. Shoot. Heat.</div>
+        <div class="card-url">kayfabeheat.com</div>
+      </a>
+    </div>
+
+    <div class="cat-label">News &amp; Aggregators</div>
+    <div class="cards-3col">
+      <a class="card" href="https://globalpolitics360.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="gp360">GLOBAL POLITICS <span>360</span></div></div>
+        <div class="card-desc">AI-powered global news and podcast aggregator with editorial integrity.</div>
+        <div class="card-tagline">INDEPENDENT VOICES ◆ UNFILTERED PERSPECTIVES</div>
+        <div class="card-url">globalpolitics360.com</div>
+      </a>
+      <a class="card" href="https://yamanakafactors.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="yama-logo">Yamanaka Factors<small>Cellular Reprogramming Report</small></div></div>
+        <div class="card-desc">Automated longevity and cellular reprogramming science news hub.</div>
+        <div class="card-url">yamanakafactors.com</div>
+      </a>
+      <a class="card" href="https://sirjonyive.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="jony-logo">Sir Jony Ive<small>Premium Tribute &amp; News</small></div></div>
+        <div class="card-desc">A premium tribute and news hub dedicated to the legacy of the world's greatest designer.</div>
+        <div class="card-url">sirjonyive.com</div>
+      </a>
+      <a class="card card-scisilenced" href="https://sciencesilenced.com" target="_blank" rel="noopener">
+        <div class="card-logo">
+          <div class="scisilenced-logo">
+            <span class="ss-science">Science</span>
+            <span class="ss-word">SILENCED<span class="ss-strike"></span></span>
+            <small>No Pharma Funding. No Approved Narratives.</small>
+          </div>
+        </div>
+        <div class="card-desc">AI-curated aggregator of suppressed, censored, and heterodox medical and scientific research. Updated 4x daily.</div>
+        <div class="card-tagline">THE STUDIES THEY DIDN'T WANT YOU TO READ</div>
+        <div class="card-url">sciencesilenced.com</div>
+      </a>
+    </div>
+
+    <div class="cat-label">Advocacy</div>
+    <div class="cards-3col">
+      <a class="card card-pardon" href="https://pardonjohnkiriakou.com" target="_blank" rel="noopener">
+        <div class="card-logo">
+          <div class="pardon-logo">
+            <span class="p-pardon">PARDON</span>
+            <span class="p-name">John Kiriakou</span>
+            <small>He told the truth. They put him in prison.</small>
+          </div>
+        </div>
+        <div class="card-desc">Independent advocacy site for a presidential pardon for the CIA whistleblower who confirmed waterboarding — the only American jailed for the torture program. Sign the petition.</div>
+        <div class="card-tagline">The torturers went free. He didn't.</div>
+        <div class="card-url">pardonjohnkiriakou.com</div>
+      </a>
+
+      <!-- ── FREE ELIZABETH HOLMES ── -->
+      <a class="card card-holmes" href="https://freeelizabetholmes.com" target="_blank" rel="noopener">
+        <div class="card-logo">
+          <div class="holmes-logo">
+            <span class="h-free">FREE</span>
+            <span class="h-name">Elizabeth Holmes</span>
+            <small>Failure is not fraud.</small>
+          </div>
+        </div>
+        <div class="card-desc">Independent advocacy for clemency for Elizabeth Holmes — acquitted on all patient counts, zero personal enrichment, 11.25 years. Two children. Sign the petition.</div>
+        <div class="card-tagline">She saw the future. They punished her for it.</div>
+        <div class="card-url">freeelizabetholmes.com</div>
+      </a>
+      <!-- ── END FREE ELIZABETH HOLMES ── -->
+    </div>
+
+    <div class="cat-label">Travel</div>
+    <div class="cards-3col">
+      <a class="card card-cbnc" href="https://ilovecbnc.com" target="_blank" rel="noopener">
+        <div class="card-logo"><img src="cbnc-logo.png" alt="I Love CBNC"></div>
+        <div class="card-desc">The independent community guide and news hub for Carolina Beach, NC. Restaurants, bars, events, and local news. Updated 3x daily.</div>
+        <div class="card-url">ilovecbnc.com</div>
+      </a>
+    </div>
+
+    <div class="cat-label">Underground</div>
+    <div class="cards-3col">
+      <a class="card card-lulz" href="https://lulz-sec.com" target="_blank" rel="noopener">
+        <div class="card-logo"><div class="lulz-logo"><span class="l1">LULZ</span><span class="l2">-SEC</span><small>still laughing. still watching.</small></div></div>
+        <div class="card-desc">Legal tribute to LulzSec, whistleblowers, and digital freedom fighters. AI-curated Zero Day feed, 4x daily.</div>
+        <div class="card-url">lulz-sec.com</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="tab-books" class="tab-content">
+    <div class="sec-label">Novels</div>
+    <div class="books-grid">
+      <div class="book-card">
+        <div class="book-cover"><img src="cover-spyder-byte.jpg" alt="Spyder Byte by Zach Myers"></div>
+        <div class="book-title">Spyder Byte</div>
+        <div class="book-desc">A surveillance nanotechnology thriller set in a fictional Ohio suburb — where the watchers become the watched.</div>
+      </div>
+      <div class="book-card">
+        <div class="book-cover"><img src="cover-2084.jpg" alt="2084 by Zach Myers"></div>
+        <div class="book-title">2084</div>
+        <div class="book-desc">A dystopian look at power, control, and what happens when the future arrives ahead of schedule.</div>
+      </div>
+      <div class="book-card">
+        <div class="book-cover"><img src="cover-crooked-river.jpg" alt="Crooked River Politics by Zach Myers"></div>
+        <div class="book-title">Crooked River Politics</div>
+        <div class="book-desc">Political fiction set deep in the corruption of a small Northeast Ohio city — where loyalty is currency and truth is a liability.</div>
       </div>
     </div>
-    <div class="masthead-sidebar">
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Her sentence</p>
-        <p class="sidebar-card-big">11.25</p>
-        <p class="sidebar-card-text">Years in federal prison — longer than the average for manslaughter</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Patient fraud counts</p>
-        <p class="sidebar-card-big">4 of 4</p>
-        <p class="sidebar-card-text">Acquitted on every single patient count by the jury</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Personal enrichment</p>
-        <p class="sidebar-card-big">$0</p>
-        <p class="sidebar-card-text">She never sold her shares. She never cashed out.</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Earliest release</p>
-        <p class="sidebar-card-big">2032</p>
-        <p class="sidebar-card-text">Her children will be 9 and 10 years old</p>
-      </div>
+  </div>
+
+  <div id="tab-kpop" class="tab-content">
+    <div class="sec-label">K-Pop Network</div>
+    <div class="kpop-intro">A 12-site automated content network covering the K-pop universe — from BTS to HYBE and beyond. Built with my wife, who knows this world better than anyone. AI-curated, twice-daily updates across all properties.</div>
+
+    <div class="bucket-label bucket-label-bts">BTS Bucket</div>
+    <div class="cards-3col" style="margin-bottom:0.5rem;">
+      <a class="card-bts" href="https://btstxt.com" target="_blank" rel="noopener">
+        <div class="kpop-name">BTS TXT</div>
+        <div class="kpop-url">btstxt.com</div>
+      </a>
+      <a class="card-bts" href="https://armypulse.com" target="_blank" rel="noopener">
+        <div class="kpop-name">Army Pulse</div>
+        <div class="kpop-url">armypulse.com</div>
+      </a>
+      <a class="card-bts" href="https://bangtanbeat.com" target="_blank" rel="noopener">
+        <div class="kpop-name">Bangtan Beat</div>
+        <div class="kpop-url">bangtanbeat.com</div>
+      </a>
+      <a class="card-bts" href="https://txtbts.com" target="_blank" rel="noopener">
+        <div class="kpop-name">TXT BTS</div>
+        <div class="kpop-url">txtbts.com</div>
+      </a>
     </div>
+
+    <div class="bucket-label bucket-label-hybe">HYBE Bucket</div>
+    <div class="cards-3col" style="margin-bottom:0.5rem;">
+      <a class="card-hybe" href="https://hybefandom.com" target="_blank" rel="noopener">
+        <div class="kpop-name">HYBE Fandom</div>
+        <div class="kpop-url">hybefandom.com</div>
+      </a>
+      <a class="card-hybe" href="https://hybeworld.com" target="_blank" rel="noopener">
+        <div class="kpop-name">HYBE World</div>
+        <div class="kpop-url">hybeworld.com</div>
+      </a>
+      <a class="card-hybe" href="https://bighitnation.com" target="_blank" rel="noopener">
+        <div class="kpop-name">Big Hit Nation</div>
+        <div class="kpop-url">bighitnation.com</div>
+      </a>
+      <a class="card-hybe" href="https://bighitworld.com" target="_blank" rel="noopener">
+        <div class="kpop-name">Big Hit World</div>
+        <div class="kpop-url">bighitworld.com</div>
+      </a>
+    </div>
+
+    <div class="bucket-label bucket-label-kpop">K-Pop Bucket</div>
+    <div class="cards-3col" style="margin-bottom:0.5rem;">
+      <a class="card-kpop-gen" href="https://iheartkpop.com" target="_blank" rel="noopener">
+        <div class="kpop-name">I Heart K-Pop</div>
+        <div class="kpop-url">iheartkpop.com</div>
+      </a>
+      <a class="card-kpop-gen" href="https://kpoppulse.com" target="_blank" rel="noopener">
+        <div class="kpop-name">K-Pop Pulse</div>
+        <div class="kpop-url">kpoppulse.com</div>
+      </a>
+      <a class="card-kpop-gen" href="https://idolrush.com" target="_blank" rel="noopener">
+        <div class="kpop-name">Idol Rush</div>
+        <div class="kpop-url">idolrush.com</div>
+      </a>
+      <a class="card-kpop-gen" href="https://biashaven.com" target="_blank" rel="noopener">
+        <div class="kpop-name">Bias Haven</div>
+        <div class="kpop-url">biashaven.com</div>
+      </a>
+    </div>
+  </div>
+
+  <div id="tab-about" class="tab-content">
+    <div class="sec-label">About Zach Myers</div>
+    <div class="about-text">Founder, PhD student, author of three dystopian and political thriller fiction novels. Builder of next-generation retail marketplaces, the world's most secure dating site, and automated content networks. Currently based in Northeast Ohio where he lives with his wife, four boys, and three rescue dogs.</div>
+    <div class="tags">
+      <div class="tag">Founder</div>
+      <div class="tag">Author</div>
+      <div class="tag">Researcher</div>
+      <div class="tag">Longevity science</div>
+      <div class="tag">Political fiction</div>
+      <div class="tag">K-Pop media</div>
+      <div class="tag">Cricket</div>
+      <div class="tag">Dating tech</div>
+      <div class="tag">Northeast Ohio</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-l">© 2026 Mind of Myers</div>
+    <a class="footer-e" href="mailto:hello@mindofmyers.com">hello@mindofmyers.com</a>
   </div>
 </div>
-
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="stat-block">
-    <div class="stat-block-num">11.25 yrs</div>
-    <div class="stat-block-label">Sentence — longer than federal manslaughter average</div>
-  </div>
-  <div class="stat-block">
-    <div class="stat-block-num">4 of 4</div>
-    <div class="stat-block-label">Patient fraud counts — acquitted on every one</div>
-  </div>
-  <div class="stat-block">
-    <div class="stat-block-num">$0</div>
-    <div class="stat-block-label">Personal enrichment — never sold her shares</div>
-  </div>
-  <div class="stat-block">
-    <div class="stat-block-num">2032</div>
-    <div class="stat-block-label">Earliest release — her children will be 9 and 10</div>
-  </div>
-</div>
-
-<!-- THE CASE -->
-<div class="section" id="case">
-  <div class="section-header">
-    <div>
-      <p class="section-eyebrow">Why she should be free</p>
-      <p class="section-title">The Case for Release</p>
-    </div>
-  </div>
-  <div class="args-grid">
-    <div class="arg">
-      <div class="arg-num">01</div>
-      <p class="arg-title">The jury cleared her of harming a single patient</p>
-      <p class="arg-body">The prosecution's most serious allegation — that Holmes endangered patients — was heard by twelve jurors who reviewed every piece of evidence and returned four consecutive not guilty verdicts. The claim that she put patients at risk was tested in a court of law and rejected. The media never let that finding lead the story.</p>
-    </div>
-    <div class="arg">
-      <div class="arg-num">02</div>
-      <p class="arg-title">She never enriched herself</p>
-      <p class="arg-body">Holmes held her Theranos shares from founding through collapse. She did not liquidate. She did not wire funds offshore. Every dollar that came into Theranos went into building the company she believed in. Fraudsters run with the money. She didn't run. She stayed — and lost everything alongside the investors she is accused of harming.</p>
-    </div>
-    <div class="arg">
-      <div class="arg-num">03</div>
-      <p class="arg-title">The science she pioneered is now proven and commercialized</p>
-      <p class="arg-body">Fingerprick diagnostics, microfluidic blood analysis, and point-of-care testing from minimal samples — the core technology Theranos pursued — are today offered by multiple companies worldwide. The vision was not invented to deceive. It was real science being pushed to its limit by someone who believed it was achievable.</p>
-    </div>
-    <div class="arg">
-      <div class="arg-num">04</div>
-      <p class="arg-title">She was held to a standard no male founder has ever faced</p>
-      <p class="arg-body">Silicon Valley was built on bold demos that outpaced the product and founders who raised billions on promises they couldn't keep. The men who did this faced at most civil suits and SEC fines. Elizabeth Holmes — a young woman who played at the same level — received a decade in federal prison. The disparity is not subtle.</p>
-    </div>
-    <div class="arg">
-      <div class="arg-num">05</div>
-      <p class="arg-title">Two children are growing up without their mother</p>
-      <p class="arg-body">Holmes has two young children. They will be nearly teenagers before she is scheduled to come home. No theory of deterrence, no sentencing guideline, no amount of investor capital justifies what this sentence takes from those two children. They are paying a sentence they did not earn.</p>
-    </div>
-    <div class="arg">
-      <div class="arg-num">06</div>
-      <p class="arg-title">Clemency is the right path</p>
-      <p class="arg-body">Holmes is not a danger to society. She is not a flight risk. She poses no ongoing threat to anyone. The President has the constitutional authority to commute her sentence — and there is every reason to do so. Proportional justice demands it. Her family demands it. History will demand it.</p>
-    </div>
-  </div>
-</div>
-
-<!-- SENTENCE -->
-<div class="section sentence-section" id="sentence">
-  <div class="section-header">
-    <div>
-      <p class="section-eyebrow">The sentence in context</p>
-      <p class="section-title">11.25 Years. Compared to What?</p>
-    </div>
-  </div>
-  <p style="font-family:'EB Garamond',serif;font-size:18px;color:var(--muted);max-width:640px;line-height:1.75;">Federal sentencing data makes the 11.25-year term impossible to defend as proportional. The people who decided her sentence could point to guidelines. They could not point to fairness.</p>
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>Person / Offense</th>
-        <th>What they did</th>
-        <th>Sentence</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="highlight">
-        <td><strong>Elizabeth Holmes</strong></td>
-        <td>Investor wire fraud — no personal enrichment, acquitted on all patient counts, first offender</td>
-        <td class="sentence-num">11.25 yrs</td>
-      </tr>
-      <tr>
-        <td>Typical white-collar, first offense</td>
-        <td>Investment fraud, no violence, no priors, comparable loss amounts</td>
-        <td class="sentence-num">3–5 yrs</td>
-      </tr>
-      <tr>
-        <td>Federal involuntary manslaughter avg.</td>
-        <td>A person is dead</td>
-        <td class="sentence-num">~4 yrs</td>
-      </tr>
-      <tr>
-        <td>Adam Neumann — WeWork</td>
-        <td>Built a $47B valuation on misleading projections, personally cashed out $1.7B</td>
-        <td class="sentence-num">0 days</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<!-- MEDIA -->
-<div class="section" id="media">
-  <div class="section-header">
-    <div>
-      <p class="section-eyebrow">The media narrative</p>
-      <p class="section-title">They Built Her Up. Then They Tore Her Down.</p>
-    </div>
-  </div>
-  <div class="pullquote">
-    <p>The same outlets that made Elizabeth Holmes a hero spent years remaking her as a villain — publishing books, producing HBO documentaries, and launching prestige television series while her trial was underway. Her jury did not deliberate in a vacuum.</p>
-  </div>
-  <div class="media-flip-grid">
-    <div class="media-flip-card">
-      <div class="media-flip-top">
-        <p class="media-flip-source">Fortune</p>
-        <p class="media-flip-before">"The next Steve Jobs" — cover story, 2014</p>
-      </div>
-      <div class="media-flip-bottom">
-        <p class="media-flip-label">Then →</p>
-        <p class="media-flip-after">"The biggest fraud in Silicon Valley history" — same publication, two years later</p>
-      </div>
-    </div>
-    <div class="media-flip-card">
-      <div class="media-flip-top">
-        <p class="media-flip-source">Forbes</p>
-        <p class="media-flip-before">Youngest self-made female billionaire in American history</p>
-      </div>
-      <div class="media-flip-bottom">
-        <p class="media-flip-label">Then →</p>
-        <p class="media-flip-after">Net worth declared zero overnight. Publicly humiliated on every platform.</p>
-      </div>
-    </div>
-    <div class="media-flip-card">
-      <div class="media-flip-top">
-        <p class="media-flip-source">HBO</p>
-        <p class="media-flip-before">The Inventor — documentary produced and released during the trial period</p>
-      </div>
-      <div class="media-flip-bottom">
-        <p class="media-flip-label">Then →</p>
-        <p class="media-flip-after">Framed as open-and-shut before a single verdict was returned</p>
-      </div>
-    </div>
-    <div class="media-flip-card">
-      <div class="media-flip-top">
-        <p class="media-flip-source">Hulu</p>
-        <p class="media-flip-before">The Dropout — prestige dramatization starring Amanda Seyfried</p>
-      </div>
-      <div class="media-flip-bottom">
-        <p class="media-flip-label">Then →</p>
-        <p class="media-flip-after">Continued airing and winning awards while her appeal was still being heard</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- PETITION -->
-<div class="petition" id="petition">
-  <div class="petition-inner">
-    <p class="petition-eyebrow">Add your name</p>
-    <h2>Sign the Petition</h2>
-    <p class="petition-sub">Every signature is a voice that says: this sentence is not justice. Add your name to the call for Elizabeth Holmes's release.</p>
-    <div id="petition-counter" class="petition-counter"></div>
-    <form class="petition-form" id="petition-form">
-      <input type="text" id="first-name" placeholder="First Name" required />
-      <input type="text" id="last-name" placeholder="Last Name" required />
-      <input type="email" id="email" placeholder="Email Address" required class="full" />
-      <input type="text" id="zip" placeholder="ZIP Code (optional)" />
-      <textarea id="comment" placeholder="Your message (optional)" class="full"></textarea>
-      <button type="submit" class="petition-submit">Add My Name →</button>
-    </form>
-    <div class="petition-message" id="petition-message">Thank you. Your signature has been recorded.</div>
-  </div>
-</div>
-
-<!-- REP FINDER -->
-<div class="section rep-section" id="rep">
-  <div class="section-header">
-    <div>
-      <p class="section-eyebrow">Take action</p>
-      <p class="section-title">Contact Your Representatives</p>
-    </div>
-  </div>
-  <p class="rep-intro">Enter your ZIP code to find your U.S. House member, both Senators, and the White House — then contact them directly and urge them to support clemency for Elizabeth Holmes.</p>
-  <div class="zip-row">
-    <input type="text" class="zip-input" id="zip-lookup" placeholder="Enter ZIP code" maxlength="5" />
-    <button class="zip-btn" onclick="findRep()">Find My Reps →</button>
-  </div>
-  <div class="rep-cards" id="rep-cards">
-    <div class="rep-card" id="card-house">
-      <p class="rep-card-label">U.S. House</p>
-      <p class="rep-card-title">Your Representative</p>
-      <p class="rep-card-body">Contact your House member directly and urge them to support clemency for Elizabeth Holmes.</p>
-      <p class="rep-card-note">Your ZIP code is pre-filled — click to go directly to your representative's contact page on house.gov.</p>
-      <a id="house-link" href="#" target="_blank" class="rep-link">Find My Rep → House.gov</a>
-    </div>
-    <div class="rep-card" id="card-senate">
-      <p class="rep-card-label">U.S. Senate</p>
-      <p class="rep-card-title">Your Senators</p>
-      <p class="rep-card-body">Contact both of your U.S. Senators and make your voice heard on proportional sentencing.</p>
-      <p class="rep-card-note">On the Senate page, select your state from the "Choose a state" dropdown to find and contact both of your senators.</p>
-      <a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" class="rep-link">Contact My Senators → Senate.gov</a>
-    </div>
-    <div class="rep-card" id="card-wh">
-      <p class="rep-card-label">White House</p>
-      <p class="rep-card-title">Presidential Clemency</p>
-      <p class="rep-card-body">The President has the constitutional power to commute Elizabeth Holmes's sentence.</p>
-      <p class="rep-card-note">Contact the White House directly to urge the President to grant clemency for Elizabeth Holmes.</p>
-      <a href="https://www.whitehouse.gov/contact/" target="_blank" class="rep-link">Contact the White House →</a>
-    </div>
-  </div>
-</div>
-
-<!-- NEWS -->
-<div class="section" id="news">
-  <div class="section-header">
-    <div>
-      <p class="section-eyebrow">Updated daily</p>
-      <p class="section-title">Latest Coverage</p>
-    </div>
-  </div>
-  <p style="font-family:'EB Garamond',serif;font-size:17px;color:var(--muted);margin-bottom:0.5rem;">News and commentary supporting Elizabeth Holmes, curated and updated daily.</p>
-  <div class="news-grid" id="news-grid">
-    <p class="news-empty">Loading latest coverage...</p>
-  </div>
-</div>
-
-<!-- FINAL CTA -->
-<div class="final-cta">
-  <h2>Her children need her home.</h2>
-  <p>Elizabeth Holmes is not a danger to society. She is not a flight risk. She is a mother of two young children serving a sentence that defies proportion, precedent, and basic fairness. Clemency is a path. Public pressure has always mattered.</p>
-  <div class="cta-buttons">
-    <a href="#petition" class="btn btn-primary">Sign the Petition</a>
-    <a href="mailto:?subject=Free%20Elizabeth%20Holmes&body=Read%20the%20case%20at%20https://freeelizabetholmes.com" class="btn btn-outline">Share this page</a>
-    <a href="https://www.whitehouse.gov/contact/" target="_blank" class="btn btn-outline">Contact the White House</a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <span>FreeElizabethHolmes.com — Failure is not fraud.</span>
-  <span>Not affiliated with Elizabeth Holmes or her legal team</span>
-</footer>
 
 <script>
-  const SUPABASE_URL = 'https://crcqxzvamrlagfznxxoc.supabase.co';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNyY3F4enZhbXJsYWdmem54eG9jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NzA5MDgsImV4cCI6MjA5MzM0NjkwOH0.yd-N78-EYF6Fw9o7tz73nuwi3XhXr-myxdhlEfmpcuI';
-  const SIG_THRESHOLD = 100;
-
-  async function loadCount() {
-    try {
-      const res = await fetch(`${SUPABASE_URL}/rest/v1/petition_signatures?select=id`, {
-        headers: { 'apikey': SUPABASE_ANON_KEY, 'Prefer': 'count=exact' }
-      });
-      const count = parseInt(res.headers.get('content-range')?.split('/')[1] || '0');
-      if (count >= SIG_THRESHOLD) {
-        const el = document.getElementById('petition-counter');
-        el.textContent = `${count.toLocaleString()} people have signed.`;
-        el.style.display = 'block';
-      }
-    } catch(e) {}
-  }
-
-  document.getElementById('petition-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const btn = document.querySelector('.petition-submit');
-    btn.textContent = 'Signing...';
-    btn.disabled = true;
-    const payload = {
-      first_name: document.getElementById('first-name').value.trim(),
-      last_name: document.getElementById('last-name').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      zip: document.getElementById('zip').value.trim() || null,
-      comment: document.getElementById('comment').value.trim() || null
-    };
-    try {
-      await fetch(`${SUPABASE_URL}/rest/v1/petition_signatures`, {
-        method: 'POST',
-        headers: {
-          'apikey': SUPABASE_ANON_KEY,
-          'Content-Type': 'application/json',
-          'Prefer': 'return=minimal'
-        },
-        body: JSON.stringify(payload)
-      });
-      document.getElementById('petition-message').style.display = 'block';
-      document.getElementById('petition-form').style.display = 'none';
-      loadCount();
-    } catch(e) {
-      btn.textContent = 'Add My Name →';
-      btn.disabled = false;
-    }
-  });
-
-  loadCount();
-
-  function findRep() {
-    const zip = document.getElementById('zip-lookup').value.trim();
-    if (zip.length < 5) { alert('Please enter a valid 5-digit ZIP code.'); return; }
-    document.getElementById('house-link').href = `https://www.house.gov/htbin/findrep?ZIP=${zip}`;
-    document.getElementById('card-house').classList.add('visible');
-    document.getElementById('card-senate').classList.add('visible');
-    document.getElementById('card-wh').classList.add('visible');
-  }
-
-  async function loadNews() {
-    const grid = document.getElementById('news-grid');
-    try {
-      const res = await fetch('news.json?t=' + Date.now());
-      const articles = await res.json();
-      if (!articles || articles.length === 0) {
-        grid.innerHTML = '<p class="news-empty">No recent coverage found. Check back soon.</p>';
-        return;
-      }
-      grid.innerHTML = articles.map(a => `
-        <div class="news-card">
-          <p class="news-source">${a.source || ''}</p>
-          <p class="news-title"><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></p>
-          <p class="news-date">${a.date ? new Date(a.date).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : ''}</p>
-        </div>
-      `).join('');
-    } catch(e) {
-      grid.innerHTML = '<p class="news-empty">Coverage updates daily. Check back soon.</p>';
-    }
-  }
-
-  loadNews();
+function switchTab(id,btn){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');
+}
 </script>
-
 </body>
 </html>
