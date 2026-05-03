@@ -10,135 +10,241 @@
 <meta property="og:title" content="FreeElizabethHolmes.com — Failure Is Not Fraud.">
 <meta property="og:description" content="She saw the future. They punished her for it.">
 <meta property="og:url" content="https://freeelizabetholmes.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --red: #8B1A1A;
     --red-dark: #6e1414;
-    --text: #1a1a1a;
-    --muted: #5a5a5a;
-    --border: #e0ddd8;
-    --bg-soft: #f7f5f2;
-    --bg-white: #ffffff;
+    --red-light: #fdf1f1;
+    --text: #111111;
+    --muted: #555555;
+    --light: #888888;
+    --border: #d8d3cb;
+    --border-light: #ede9e2;
+    --bg: #f9f7f4;
+    --bg-soft: #f3f0eb;
+    --bg-dark: #141008;
+    --white: #ffffff;
+    --ink: #1a1208;
   }
-  body { font-family: 'Georgia', serif; background: #faf9f7; color: var(--text); line-height: 1.7; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'EB Garamond', serif; background: var(--bg); color: var(--text); line-height: 1.7; }
   a { color: var(--red); text-decoration: none; }
 
-  nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; border-bottom: 0.5px solid var(--border); background: var(--bg-white); position: sticky; top: 0; z-index: 10; flex-wrap: wrap; gap: 0.5rem; }
-  .nav-logo { font-family: 'Georgia', serif; font-size: 14px; font-weight: normal; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); }
-  .nav-tagline { font-family: 'Georgia', serif; font-size: 13px; font-style: italic; color: var(--muted); }
-  .nav-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-  .nav-links a { font-family: 'Arial', sans-serif; font-size: 12px; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; }
-  .nav-links a:hover { color: var(--red); }
+  /* ── NAV ── */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 3rem; background: var(--ink); position: sticky; top: 0; z-index: 100;
+    flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid #2a2010;
+  }
+  .nav-left { display: flex; align-items: baseline; gap: 1.5rem; }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #f5efe6; }
+  .nav-tagline { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8a7a60; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: #8a7a60; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: #f5efe6; }
 
-  .hero { padding: 5rem 2.5rem 4rem; border-bottom: 0.5px solid var(--border); }
-  .hero-eyebrow { font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; }
-  .hero h1 { font-family: 'Georgia', serif; font-size: 52px; font-weight: normal; line-height: 1.1; color: var(--text); margin-bottom: 1rem; }
-  .hero h1 em { font-style: italic; color: var(--red); }
-  .hero-tagline { font-family: 'Georgia', serif; font-size: 26px; font-style: italic; color: var(--red); margin-bottom: 0.5rem; border-left: 3px solid var(--red); padding-left: 1rem; }
-  .hero-hook { font-family: 'Arial', sans-serif; font-size: 15px; color: var(--muted); padding-left: 1rem; margin-bottom: 1.75rem; }
-  .hero-sub { font-family: 'Arial', sans-serif; font-size: 17px; color: var(--muted); line-height: 1.8; max-width: 640px; margin-bottom: 2rem; }
-  .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: var(--ink);
+    padding: 0 3rem 5rem;
+    border-bottom: 3px solid var(--red);
+  }
+  .masthead-rule { border: none; border-top: 0.5px solid #2a2010; margin-bottom: 3.5rem; }
+  .masthead-grid { display: grid; grid-template-columns: 1fr 340px; gap: 4rem; align-items: start; }
+  .masthead-eyebrow { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; }
+  .masthead h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 88px; font-weight: 700; line-height: 0.92;
+    color: #f5efe6; letter-spacing: -0.02em; margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  .masthead h1 em { font-style: italic; color: var(--red); text-transform: none; font-weight: 400; font-size: 96px; }
+  .masthead-tagline { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; color: var(--red); margin-bottom: 1rem; padding-left: 1.25rem; border-left: 2px solid var(--red); }
+  .masthead-hook { font-family: 'Inter', sans-serif; font-size: 13px; color: #8a7a60; padding-left: 1.25rem; margin-bottom: 2rem; letter-spacing: 0.04em; }
+  .masthead-sub { font-family: 'EB Garamond', serif; font-size: 18px; color: #b0a080; line-height: 1.75; margin-bottom: 2.5rem; }
+  .masthead-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); border-bottom: 0.5px solid var(--border); }
-  .stat { padding: 2rem 1.75rem; border-right: 0.5px solid var(--border); }
-  .stat:last-child { border-right: none; }
-  .stat-num { font-family: 'Georgia', serif; font-size: 30px; color: var(--red); margin-bottom: 6px; }
-  .stat-label { font-family: 'Arial', sans-serif; font-size: 12px; color: var(--muted); line-height: 1.5; }
+  /* ── STATS BAR ── */
+  .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--red); }
+  .stat-block { padding: 2rem 1.5rem; border-right: 1px solid rgba(255,255,255,0.15); text-align: center; }
+  .stat-block:last-child { border-right: none; }
+  .stat-block-num { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 6px; }
+  .stat-block-label { font-family: 'Inter', sans-serif; font-size: 11px; color: rgba(255,255,255,0.75); line-height: 1.5; letter-spacing: 0.04em; }
 
-  .section { padding: 3.5rem 2.5rem; border-bottom: 0.5px solid var(--border); }
-  .section-eyebrow { font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 2rem; }
+  /* ── MASTHEAD SIDEBAR ── */
+  .masthead-sidebar { padding-top: 0.5rem; }
+  .sidebar-card { border: 0.5px solid #2a2010; border-radius: 2px; padding: 1.5rem; margin-bottom: 1.25rem; background: #1a1208; }
+  .sidebar-card-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; }
+  .sidebar-card-text { font-family: 'EB Garamond', serif; font-size: 15px; color: #b0a080; line-height: 1.6; }
+  .sidebar-card-big { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 700; color: #f5efe6; line-height: 1; margin-bottom: 4px; }
 
-  .arg { padding: 1.5rem 0; border-bottom: 0.5px solid var(--border); }
-  .arg:last-child { border-bottom: none; }
-  .arg-title { font-family: 'Georgia', serif; font-size: 19px; font-weight: normal; color: var(--text); margin-bottom: 0.75rem; }
-  .arg-body { font-family: 'Arial', sans-serif; font-size: 15px; color: var(--muted); line-height: 1.8; }
+  /* ── SECTION BASE ── */
+  .section { padding: 4rem 3rem; border-bottom: 0.5px solid var(--border); }
+  .section-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
+  .section-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 400; color: var(--border); line-height: 1; }
+  .section-eyebrow { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 600; color: var(--text); line-height: 1.2; margin-top: 4px; }
 
-  .compare-table { width: 100%; border-collapse: collapse; font-family: 'Arial', sans-serif; font-size: 14px; margin-top: 1.5rem; }
-  .compare-table th { text-align: left; padding: 10px 14px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 0.5px solid var(--border); font-weight: normal; }
-  .compare-table td { padding: 14px; border-bottom: 0.5px solid var(--border); color: var(--muted); vertical-align: top; }
-  .compare-table td:first-child { color: var(--text); }
-  .sentence-cell { color: var(--red); font-size: 16px; font-family: 'Georgia', serif; }
-  .highlight-row td { background: #fdf1f1; }
+  /* ── ARGUMENTS ── */
+  .args-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .arg { padding: 2rem; border-right: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+  .arg:nth-child(even) { border-right: none; }
+  .arg:nth-last-child(-n+2) { border-bottom: none; }
+  .arg-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 400; color: var(--red); opacity: 0.2; line-height: 1; margin-bottom: 0.5rem; }
+  .arg-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 0.75rem; line-height: 1.25; }
+  .arg-body { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--muted); line-height: 1.75; }
 
-  .pullquote { padding: 2.5rem 3rem; background: var(--bg-soft); border-left: 3px solid var(--red); margin: 2rem 0; }
-  .pullquote p { font-family: 'Georgia', serif; font-size: 20px; color: var(--text); line-height: 1.65; font-style: italic; }
+  /* ── SENTENCE TABLE ── */
+  .sentence-section { background: var(--bg-soft); }
+  .compare-table { width: 100%; border-collapse: collapse; margin-top: 2rem; font-family: 'Inter', sans-serif; }
+  .compare-table th { text-align: left; padding: 12px 16px; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light); border-bottom: 1px solid var(--border); }
+  .compare-table td { padding: 16px; border-bottom: 0.5px solid var(--border-light); font-size: 14px; color: var(--muted); vertical-align: top; line-height: 1.5; }
+  .compare-table td:first-child { font-family: 'EB Garamond', serif; font-size: 16px; color: var(--text); }
+  .compare-table .sentence-num { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: var(--red); }
+  .compare-table tr.highlight td { background: var(--red-light); }
+  .compare-table tr.highlight td:first-child { font-weight: 600; }
 
-  .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-  .media-card { background: var(--bg-white); border: 0.5px solid var(--border); border-radius: 8px; padding: 1.25rem; }
-  .media-source { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 8px; }
-  .media-before { font-family: 'Georgia', serif; font-size: 14px; color: var(--text); line-height: 1.5; margin-bottom: 10px; font-style: italic; }
-  .media-divider { font-family: 'Arial', sans-serif; font-size: 11px; color: var(--red); letter-spacing: 0.06em; }
-  .media-after { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 6px; }
+  /* ── PULLQUOTE ── */
+  .pullquote { background: var(--ink); padding: 3rem; margin: 2.5rem 0; border-left: 3px solid var(--red); }
+  .pullquote p { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-style: italic; color: #f5efe6; line-height: 1.55; }
 
-  .petition { background: #1a0a0a; color: #f5f0eb; padding: 4rem 2.5rem; border-bottom: 0.5px solid var(--border); }
-  .petition h2 { font-family: 'Georgia', serif; font-size: 34px; font-weight: normal; color: #f5f0eb; margin-bottom: 0.75rem; }
-  .petition p { font-family: 'Arial', sans-serif; font-size: 15px; color: #b0a090; line-height: 1.8; max-width: 560px; margin-bottom: 2rem; }
-  .petition-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 600px; }
-  .petition-form input, .petition-form textarea { background: #2a1a1a; border: 0.5px solid #4a3030; color: #f5f0eb; padding: 12px 14px; font-family: 'Arial', sans-serif; font-size: 14px; border-radius: 4px; outline: none; }
-  .petition-form input::placeholder, .petition-form textarea::placeholder { color: #6a5050; }
+  /* ── MEDIA GRID ── */
+  .media-flip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
+  .media-flip-card { border: 0.5px solid var(--border); border-radius: 4px; overflow: hidden; }
+  .media-flip-top { background: var(--ink); padding: 1.25rem 1.5rem; }
+  .media-flip-source { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--red); margin-bottom: 8px; }
+  .media-flip-before { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: #f5efe6; line-height: 1.4; }
+  .media-flip-bottom { background: var(--bg-soft); padding: 1rem 1.5rem; }
+  .media-flip-label { font-family: 'Inter', sans-serif; font-size: 10px; color: var(--red); font-weight: 600; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .media-flip-after { font-family: 'EB Garamond', serif; font-size: 15px; color: var(--muted); line-height: 1.5; }
+
+  /* ── PETITION ── */
+  .petition { background: var(--bg-dark); padding: 5rem 3rem; border-bottom: 0.5px solid #2a2010; }
+  .petition-inner { max-width: 640px; }
+  .petition-eyebrow { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .petition h2 { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 700; color: #f5efe6; line-height: 1.1; margin-bottom: 1rem; }
+  .petition-sub { font-family: 'EB Garamond', serif; font-size: 18px; color: #8a7a60; line-height: 1.7; margin-bottom: 2rem; }
+  .petition-counter { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: #f5efe6; margin-bottom: 1.5rem; display: none; }
+  .petition-form { display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem; }
+  .petition-form input, .petition-form textarea {
+    background: #1e1508; border: 0.5px solid #3a2a10; color: #f5efe6;
+    padding: 13px 16px; font-family: 'EB Garamond', serif; font-size: 16px;
+    border-radius: 2px; outline: none; transition: border-color 0.2s;
+  }
+  .petition-form input::placeholder, .petition-form textarea::placeholder { color: #4a3a20; }
   .petition-form input:focus, .petition-form textarea:focus { border-color: var(--red); }
   .petition-form .full { grid-column: 1 / -1; }
-  .petition-form textarea { resize: vertical; min-height: 80px; }
-  .petition-submit { grid-column: 1 / -1; background: var(--red); color: #fff; border: none; padding: 14px 28px; font-family: 'Arial', sans-serif; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: background 0.15s; }
+  .petition-form textarea { resize: vertical; min-height: 90px; }
+  .petition-submit {
+    grid-column: 1 / -1; background: var(--red); color: #fff; border: none;
+    padding: 16px 32px; font-family: 'Inter', sans-serif; font-size: 12px;
+    font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
+    border-radius: 2px; cursor: pointer; transition: background 0.2s;
+  }
   .petition-submit:hover { background: var(--red-dark); }
-  .petition-message { font-family: 'Arial', sans-serif; font-size: 14px; margin-top: 1rem; color: #90c090; display: none; }
-  .petition-counter { font-family: 'Georgia', serif; font-size: 18px; color: #f5f0eb; margin-bottom: 1.5rem; display: none; }
+  .petition-message { font-family: 'EB Garamond', serif; font-size: 18px; margin-top: 1.25rem; color: #90c090; display: none; }
 
-  .rep-finder { padding: 3.5rem 2.5rem; border-bottom: 0.5px solid var(--border); }
-  .zip-row { display: flex; gap: 1rem; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; }
-  .zip-input { border: 0.5px solid var(--border); padding: 10px 14px; font-family: 'Arial', sans-serif; font-size: 14px; border-radius: 4px; outline: none; width: 160px; }
+  /* ── REP FINDER ── */
+  .rep-section { background: var(--bg-soft); }
+  .rep-intro { font-family: 'EB Garamond', serif; font-size: 18px; color: var(--muted); line-height: 1.75; max-width: 600px; margin-bottom: 2rem; }
+  .zip-row { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 2.5rem; flex-wrap: wrap; }
+  .zip-input {
+    border: 0.5px solid var(--border); padding: 13px 16px;
+    font-family: 'EB Garamond', serif; font-size: 16px;
+    border-radius: 2px; outline: none; width: 180px; background: var(--white);
+  }
   .zip-input:focus { border-color: var(--red); }
-  .zip-btn { background: var(--red); color: #fff; border: none; padding: 10px 22px; font-family: 'Arial', sans-serif; font-size: 13px; border-radius: 4px; cursor: pointer; }
+  .zip-btn {
+    background: var(--red); color: #fff; border: none; padding: 13px 28px;
+    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; cursor: pointer;
+  }
   .zip-btn:hover { background: var(--red-dark); }
-  .rep-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-  .rep-card { border: 0.5px solid var(--border); border-radius: 8px; padding: 1.25rem; display: none; }
+  .rep-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .rep-card { border: 0.5px solid var(--border); border-radius: 4px; padding: 1.5rem; display: none; background: var(--white); border-top: 3px solid var(--red); }
   .rep-card.visible { display: block; }
-  .rep-card-label { font-family: 'Arial', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 6px; }
-  .rep-card-title { font-family: 'Georgia', serif; font-size: 16px; color: var(--text); margin-bottom: 8px; }
-  .rep-card-body { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
-  .rep-link { display: inline-block; padding: 8px 16px; background: var(--red); color: #fff; border-radius: 4px; font-family: 'Arial', sans-serif; font-size: 12px; }
+  .rep-card-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--red); margin-bottom: 8px; }
+  .rep-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; }
+  .rep-card-body { font-family: 'EB Garamond', serif; font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 1.25rem; }
+  .rep-card-note { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--light); line-height: 1.6; margin-bottom: 1.25rem; font-style: italic; }
+  .rep-link {
+    display: inline-block; padding: 10px 18px; background: var(--red); color: #fff;
+    border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 11px;
+    font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .rep-link:hover { background: var(--red-dark); }
 
-  .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
-  .news-card { border: 0.5px solid var(--border); border-radius: 8px; padding: 1.25rem; background: var(--bg-white); }
-  .news-source { font-family: 'Arial', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 6px; }
-  .news-title { font-family: 'Georgia', serif; font-size: 16px; color: var(--text); line-height: 1.4; margin-bottom: 8px; }
+  /* ── NEWS ── */
+  .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+  .news-card { border: 0.5px solid var(--border); border-radius: 4px; padding: 1.5rem; background: var(--white); border-top: 2px solid var(--border); transition: border-top-color 0.2s; }
+  .news-card:hover { border-top-color: var(--red); }
+  .news-source { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--light); margin-bottom: 8px; }
+  .news-title { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--text); line-height: 1.35; margin-bottom: 10px; }
   .news-title a { color: var(--text); }
   .news-title a:hover { color: var(--red); }
-  .news-date { font-family: 'Arial', sans-serif; font-size: 12px; color: var(--muted); }
-  .news-empty { font-family: 'Arial', sans-serif; font-size: 14px; color: var(--muted); font-style: italic; }
+  .news-date { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--light); }
+  .news-empty { font-family: 'EB Garamond', serif; font-size: 17px; color: var(--muted); font-style: italic; }
 
-  .cta-section { padding: 5rem 2.5rem; text-align: center; }
-  .cta-section h2 { font-family: 'Georgia', serif; font-size: 34px; font-weight: normal; color: var(--text); margin-bottom: 1.25rem; }
-  .cta-section p { font-family: 'Arial', sans-serif; font-size: 16px; color: var(--muted); line-height: 1.8; max-width: 580px; margin: 0 auto 2rem; }
-  .cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  /* ── CTA ── */
+  .final-cta { background: var(--ink); padding: 6rem 3rem; text-align: center; border-top: 3px solid var(--red); }
+  .final-cta h2 { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 700; color: #f5efe6; line-height: 1.1; margin-bottom: 1.25rem; }
+  .final-cta p { font-family: 'EB Garamond', serif; font-size: 19px; color: #8a7a60; line-height: 1.75; max-width: 600px; margin: 0 auto 2.5rem; }
+  .cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 
-  .btn { padding: 12px 26px; border-radius: 4px; font-family: 'Arial', sans-serif; font-size: 13px; letter-spacing: 0.04em; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.15s; }
+  /* ── BUTTONS ── */
+  .btn { padding: 14px 30px; border-radius: 2px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; transition: all 0.2s; }
   .btn-primary { background: var(--red); color: #fff; border: 1px solid var(--red); }
   .btn-primary:hover { background: var(--red-dark); }
-  .btn-secondary { background: transparent; color: var(--text); border: 0.5px solid var(--border); }
-  .btn-secondary:hover { background: var(--bg-soft); }
+  .btn-outline { background: transparent; color: #f5efe6; border: 1px solid #3a2a10; }
+  .btn-outline:hover { border-color: #f5efe6; }
+  .btn-outline-dark { background: transparent; color: var(--text); border: 0.5px solid var(--border); }
+  .btn-outline-dark:hover { background: var(--bg-soft); }
 
-  footer { padding: 2rem 2.5rem; border-top: 0.5px solid var(--border); font-family: 'Arial', sans-serif; font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  /* ── FOOTER ── */
+  footer { background: var(--ink); padding: 2rem 3rem; border-top: 0.5px solid #2a2010; font-family: 'Inter', sans-serif; font-size: 11px; color: #4a3a20; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; letter-spacing: 0.06em; }
 
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 34px; }
-    .hero-tagline { font-size: 20px; }
-    .hero, .section, .cta-section, .petition, .rep-finder { padding-left: 1.25rem; padding-right: 1.25rem; }
-    .stats { grid-template-columns: 1fr 1fr; }
-    .stat { border-right: none; border-bottom: 0.5px solid var(--border); }
-    nav { padding: 1rem 1.25rem; }
-    .nav-links { display: none; }
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
     .nav-tagline { display: none; }
+    .nav-links { display: none; }
+    .masthead { padding: 0 1.5rem 3rem; }
+    .masthead-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .masthead h1 { font-size: 52px; }
+    .masthead h1 em { font-size: 58px; }
+    .masthead-sidebar { display: none; }
+    .stats-bar { grid-template-columns: 1fr 1fr; }
+    .stat-block:nth-child(2) { border-right: none; }
+    .stat-block:nth-child(3) { border-right: 0.5px solid rgba(255,255,255,0.15); }
+    .section { padding: 3rem 1.5rem; }
+    .args-grid { grid-template-columns: 1fr; }
+    .arg { border-right: none; }
+    .arg:nth-last-child(-n+2) { border-bottom: 0.5px solid var(--border); }
+    .arg:last-child { border-bottom: none; }
+    .media-flip-grid { grid-template-columns: 1fr; }
+    .petition { padding: 3rem 1.5rem; }
+    .petition h2 { font-size: 36px; }
     .petition-form { grid-template-columns: 1fr; }
+    .rep-section { padding: 3rem 1.5rem; }
+    .rep-cards { grid-template-columns: 1fr; }
+    .final-cta { padding: 4rem 1.5rem; }
+    .final-cta h2 { font-size: 36px; }
+    footer { padding: 1.5rem; }
+    .pullquote { padding: 2rem 1.5rem; }
+    .pullquote p { font-size: 20px; }
   }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-  <span class="nav-logo">FreeElizabethHolmes.com</span>
-  <span class="nav-tagline">Failure is not fraud.</span>
+  <div class="nav-left">
+    <span class="nav-logo">FreeElizabethHolmes.com</span>
+    <span class="nav-tagline">Failure is not fraud.</span>
+  </div>
   <div class="nav-links">
     <a href="#case">The Case</a>
     <a href="#sentence">The Sentence</a>
@@ -149,64 +255,117 @@
   </div>
 </nav>
 
-<div class="hero">
-  <p class="hero-eyebrow">FreeElizabethHolmes.com</p>
-  <h1>She believed<br>in a vision.<br>That is not<br><em>a crime.</em></h1>
-  <p class="hero-tagline">Failure is not fraud.</p>
-  <p class="hero-hook">She saw the future. They punished her for it.</p>
-  <p class="hero-sub">Elizabeth Holmes dedicated her life to making affordable healthcare accessible to everyone. She is serving 11.25 years in federal prison — a sentence longer than most violent criminals receive — while raising two children behind bars. This is not justice.</p>
-  <div class="hero-ctas">
-    <a href="#petition" class="btn btn-primary">Sign the Petition</a>
-    <a href="#case" class="btn btn-secondary">Read the Case</a>
+<!-- MASTHEAD -->
+<div class="masthead">
+  <hr class="masthead-rule">
+  <div class="masthead-grid">
+    <div>
+      <p class="masthead-eyebrow">An Independent Advocacy Site</p>
+      <h1>She believed<br>in a vision.<br>That is not<br><em>a crime.</em></h1>
+      <p class="masthead-tagline">Failure is not fraud.</p>
+      <p class="masthead-hook">She saw the future. They punished her for it.</p>
+      <p class="masthead-sub">Elizabeth Holmes is serving 11.25 years in federal prison for a vision that has since been proven right. The sentence is disproportionate. The injustice is real.</p>
+      <div class="masthead-ctas">
+        <a href="#petition" class="btn btn-primary">Sign the Petition</a>
+        <a href="#case" class="btn btn-outline">Read the Case</a>
+      </div>
+    </div>
+    <div class="masthead-sidebar">
+      <div class="sidebar-card">
+        <p class="sidebar-card-label">Her sentence</p>
+        <p class="sidebar-card-big">11.25</p>
+        <p class="sidebar-card-text">Years in federal prison — longer than the average for manslaughter</p>
+      </div>
+      <div class="sidebar-card">
+        <p class="sidebar-card-label">Patient fraud counts</p>
+        <p class="sidebar-card-big">4 of 4</p>
+        <p class="sidebar-card-text">Acquitted on every single patient count by the jury</p>
+      </div>
+      <div class="sidebar-card">
+        <p class="sidebar-card-label">Personal enrichment</p>
+        <p class="sidebar-card-big">$0</p>
+        <p class="sidebar-card-text">She never sold her shares. She never cashed out.</p>
+      </div>
+      <div class="sidebar-card">
+        <p class="sidebar-card-label">Earliest release</p>
+        <p class="sidebar-card-big">2032</p>
+        <p class="sidebar-card-text">Her children will be 9 and 10 years old</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="stats">
-  <div class="stat">
-    <div class="stat-num">11.25 yrs</div>
-    <div class="stat-label">Sentence — longer than the federal average for manslaughter</div>
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-block">
+    <div class="stat-block-num">11.25 yrs</div>
+    <div class="stat-block-label">Sentence — longer than federal manslaughter average</div>
   </div>
-  <div class="stat">
-    <div class="stat-num">4 of 4</div>
-    <div class="stat-label">Patient fraud counts — acquitted on every one by the jury</div>
+  <div class="stat-block">
+    <div class="stat-block-num">4 of 4</div>
+    <div class="stat-block-label">Patient fraud counts — acquitted on every one</div>
   </div>
-  <div class="stat">
-    <div class="stat-num">$0</div>
-    <div class="stat-label">Personal enrichment — she never sold her shares</div>
+  <div class="stat-block">
+    <div class="stat-block-num">$0</div>
+    <div class="stat-block-label">Personal enrichment — never sold her shares</div>
   </div>
-  <div class="stat">
-    <div class="stat-num">2032</div>
-    <div class="stat-label">Earliest release — her children will be 9 and 10 years old</div>
+  <div class="stat-block">
+    <div class="stat-block-num">2032</div>
+    <div class="stat-block-label">Earliest release — her children will be 9 and 10</div>
   </div>
 </div>
 
+<!-- THE CASE -->
 <div class="section" id="case">
-  <p class="section-eyebrow">Why she should be free</p>
-  <div class="arg">
-    <p class="arg-title">The jury cleared her of harming a single patient</p>
-    <p class="arg-body">The prosecution's most serious allegation — that Holmes endangered patients — was heard by twelve jurors who reviewed every piece of evidence and returned four consecutive not guilty verdicts. The claim that she put patients at risk was tested in a court of law and rejected. The media never let that finding lead the story.</p>
+  <div class="section-header">
+    <div>
+      <p class="section-eyebrow">Why she should be free</p>
+      <p class="section-title">The Case for Release</p>
+    </div>
   </div>
-  <div class="arg">
-    <p class="arg-title">She never enriched herself</p>
-    <p class="arg-body">Holmes held her Theranos shares from founding through collapse. She did not liquidate. She did not wire funds offshore. She did not purchase real estate with investor capital. Every dollar that came into Theranos went into building the company she believed in. Fraudsters run with the money. She didn't run. She stayed — and lost everything alongside the investors she is accused of harming.</p>
-  </div>
-  <div class="arg">
-    <p class="arg-title">The science she pioneered is now proven and commercialized</p>
-    <p class="arg-body">Fingerprick diagnostics, microfluidic blood analysis, and point-of-care testing from minimal samples — the core technology Theranos pursued — are today offered by multiple companies worldwide. The vision was not invented to deceive. It was real science being pushed to its limit by someone who believed it was achievable. Companies and founders are not prosecuted for believing too hard.</p>
-  </div>
-  <div class="arg">
-    <p class="arg-title">She was held to a standard no male founder has ever faced</p>
-    <p class="arg-body">Silicon Valley was built on bold demos that outpaced the product, fundraising pitches built on projections that never materialized, and founders who raised billions on promises they couldn't keep. The men who did this faced at most civil suits and SEC fines. Elizabeth Holmes — a young woman who played at the same level — received a decade in federal prison. The disparity is not subtle.</p>
-  </div>
-  <div class="arg">
-    <p class="arg-title">Two children are growing up without their mother</p>
-    <p class="arg-body">Holmes has two young children. They will be nearly teenagers before she is scheduled to come home. No theory of deterrence, no sentencing guideline calculation, no amount of investor capital justifies what this sentence takes from those two children. They are paying a sentence they did not earn.</p>
+  <div class="args-grid">
+    <div class="arg">
+      <div class="arg-num">01</div>
+      <p class="arg-title">The jury cleared her of harming a single patient</p>
+      <p class="arg-body">The prosecution's most serious allegation — that Holmes endangered patients — was heard by twelve jurors who reviewed every piece of evidence and returned four consecutive not guilty verdicts. The claim that she put patients at risk was tested in a court of law and rejected. The media never let that finding lead the story.</p>
+    </div>
+    <div class="arg">
+      <div class="arg-num">02</div>
+      <p class="arg-title">She never enriched herself</p>
+      <p class="arg-body">Holmes held her Theranos shares from founding through collapse. She did not liquidate. She did not wire funds offshore. Every dollar that came into Theranos went into building the company she believed in. Fraudsters run with the money. She didn't run. She stayed — and lost everything alongside the investors she is accused of harming.</p>
+    </div>
+    <div class="arg">
+      <div class="arg-num">03</div>
+      <p class="arg-title">The science she pioneered is now proven and commercialized</p>
+      <p class="arg-body">Fingerprick diagnostics, microfluidic blood analysis, and point-of-care testing from minimal samples — the core technology Theranos pursued — are today offered by multiple companies worldwide. The vision was not invented to deceive. It was real science being pushed to its limit by someone who believed it was achievable.</p>
+    </div>
+    <div class="arg">
+      <div class="arg-num">04</div>
+      <p class="arg-title">She was held to a standard no male founder has ever faced</p>
+      <p class="arg-body">Silicon Valley was built on bold demos that outpaced the product and founders who raised billions on promises they couldn't keep. The men who did this faced at most civil suits and SEC fines. Elizabeth Holmes — a young woman who played at the same level — received a decade in federal prison. The disparity is not subtle.</p>
+    </div>
+    <div class="arg">
+      <div class="arg-num">05</div>
+      <p class="arg-title">Two children are growing up without their mother</p>
+      <p class="arg-body">Holmes has two young children. They will be nearly teenagers before she is scheduled to come home. No theory of deterrence, no sentencing guideline, no amount of investor capital justifies what this sentence takes from those two children. They are paying a sentence they did not earn.</p>
+    </div>
+    <div class="arg">
+      <div class="arg-num">06</div>
+      <p class="arg-title">Clemency is the right path</p>
+      <p class="arg-body">Holmes is not a danger to society. She is not a flight risk. She poses no ongoing threat to anyone. The President has the constitutional authority to commute her sentence — and there is every reason to do so. Proportional justice demands it. Her family demands it. History will demand it.</p>
+    </div>
   </div>
 </div>
 
-<div class="section" id="sentence">
-  <p class="section-eyebrow">The sentence in context</p>
-  <p class="arg-body" style="max-width:640px;">Federal sentencing data makes the 11.25-year term impossible to defend as proportional. The people who decided her sentence could point to guidelines. They could not point to fairness.</p>
+<!-- SENTENCE -->
+<div class="section sentence-section" id="sentence">
+  <div class="section-header">
+    <div>
+      <p class="section-eyebrow">The sentence in context</p>
+      <p class="section-title">11.25 Years. Compared to What?</p>
+    </div>
+  </div>
+  <p style="font-family:'EB Garamond',serif;font-size:18px;color:var(--muted);max-width:640px;line-height:1.75;">Federal sentencing data makes the 11.25-year term impossible to defend as proportional. The people who decided her sentence could point to guidelines. They could not point to fairness.</p>
   <table class="compare-table">
     <thead>
       <tr>
@@ -216,125 +375,168 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="highlight-row">
+      <tr class="highlight">
         <td><strong>Elizabeth Holmes</strong></td>
         <td>Investor wire fraud — no personal enrichment, acquitted on all patient counts, first offender</td>
-        <td class="sentence-cell">11.25 years</td>
+        <td class="sentence-num">11.25 yrs</td>
       </tr>
       <tr>
         <td>Typical white-collar, first offense</td>
         <td>Investment fraud, no violence, no priors, comparable loss amounts</td>
-        <td class="sentence-cell">3–5 years</td>
+        <td class="sentence-num">3–5 yrs</td>
       </tr>
       <tr>
         <td>Federal involuntary manslaughter avg.</td>
         <td>A person is dead</td>
-        <td class="sentence-cell">~4 years</td>
+        <td class="sentence-num">~4 yrs</td>
       </tr>
       <tr>
         <td>Adam Neumann — WeWork</td>
-        <td>Built a $47B valuation on misleading projections, cashed out $1.7B personally</td>
-        <td class="sentence-cell">0 days</td>
+        <td>Built a $47B valuation on misleading projections, personally cashed out $1.7B</td>
+        <td class="sentence-num">0 days</td>
       </tr>
     </tbody>
   </table>
 </div>
 
+<!-- MEDIA -->
 <div class="section" id="media">
-  <p class="section-eyebrow">The media put her in prison before the jury did</p>
+  <div class="section-header">
+    <div>
+      <p class="section-eyebrow">The media narrative</p>
+      <p class="section-title">They Built Her Up. Then They Tore Her Down.</p>
+    </div>
+  </div>
   <div class="pullquote">
     <p>The same outlets that made Elizabeth Holmes a hero spent years remaking her as a villain — publishing books, producing HBO documentaries, and launching prestige television series while her trial was underway. Her jury did not deliberate in a vacuum.</p>
   </div>
-  <div class="media-grid">
-    <div class="media-card">
-      <p class="media-source">Fortune</p>
-      <p class="media-before">"The next Steve Jobs"</p>
-      <p class="media-divider">THEN →</p>
-      <p class="media-after">"The biggest fraud in Silicon Valley history"</p>
+  <div class="media-flip-grid">
+    <div class="media-flip-card">
+      <div class="media-flip-top">
+        <p class="media-flip-source">Fortune</p>
+        <p class="media-flip-before">"The next Steve Jobs" — cover story, 2014</p>
+      </div>
+      <div class="media-flip-bottom">
+        <p class="media-flip-label">Then →</p>
+        <p class="media-flip-after">"The biggest fraud in Silicon Valley history" — same publication, two years later</p>
+      </div>
     </div>
-    <div class="media-card">
-      <p class="media-source">Forbes</p>
-      <p class="media-before">Youngest self-made female billionaire in American history</p>
-      <p class="media-divider">THEN →</p>
-      <p class="media-after">Net worth declared zero. Publicly humiliated.</p>
+    <div class="media-flip-card">
+      <div class="media-flip-top">
+        <p class="media-flip-source">Forbes</p>
+        <p class="media-flip-before">Youngest self-made female billionaire in American history</p>
+      </div>
+      <div class="media-flip-bottom">
+        <p class="media-flip-label">Then →</p>
+        <p class="media-flip-after">Net worth declared zero overnight. Publicly humiliated on every platform.</p>
+      </div>
     </div>
-    <div class="media-card">
-      <p class="media-source">HBO</p>
-      <p class="media-before">Documentary produced during the trial period</p>
-      <p class="media-divider">THEN →</p>
-      <p class="media-after">Framed as open-and-shut before the verdict</p>
+    <div class="media-flip-card">
+      <div class="media-flip-top">
+        <p class="media-flip-source">HBO</p>
+        <p class="media-flip-before">The Inventor — documentary produced and released during the trial period</p>
+      </div>
+      <div class="media-flip-bottom">
+        <p class="media-flip-label">Then →</p>
+        <p class="media-flip-after">Framed as open-and-shut before a single verdict was returned</p>
+      </div>
     </div>
-    <div class="media-card">
-      <p class="media-source">Hulu</p>
-      <p class="media-before">The Dropout — prestige dramatization of her story</p>
-      <p class="media-divider">THEN →</p>
-      <p class="media-after">Still airing while her appeal was being heard</p>
+    <div class="media-flip-card">
+      <div class="media-flip-top">
+        <p class="media-flip-source">Hulu</p>
+        <p class="media-flip-before">The Dropout — prestige dramatization starring Amanda Seyfried</p>
+      </div>
+      <div class="media-flip-bottom">
+        <p class="media-flip-label">Then →</p>
+        <p class="media-flip-after">Continued airing and winning awards while her appeal was still being heard</p>
+      </div>
     </div>
   </div>
 </div>
 
+<!-- PETITION -->
 <div class="petition" id="petition">
-  <h2>Sign the Petition</h2>
-  <p>Add your name to the call for Elizabeth Holmes's release. Every signature is a voice that says: this sentence is not justice.</p>
-  <div id="petition-counter" class="petition-counter"></div>
-  <form class="petition-form" id="petition-form">
-    <input type="text" id="first-name" placeholder="First Name" required />
-    <input type="text" id="last-name" placeholder="Last Name" required />
-    <input type="email" id="email" placeholder="Email Address" required class="full" />
-    <input type="text" id="zip" placeholder="ZIP Code (optional)" />
-    <textarea id="comment" placeholder="Your message (optional)" class="full"></textarea>
-    <button type="submit" class="petition-submit">Add My Name</button>
-  </form>
-  <div class="petition-message" id="petition-message">Thank you. Your signature has been recorded.</div>
+  <div class="petition-inner">
+    <p class="petition-eyebrow">Add your name</p>
+    <h2>Sign the Petition</h2>
+    <p class="petition-sub">Every signature is a voice that says: this sentence is not justice. Add your name to the call for Elizabeth Holmes's release.</p>
+    <div id="petition-counter" class="petition-counter"></div>
+    <form class="petition-form" id="petition-form">
+      <input type="text" id="first-name" placeholder="First Name" required />
+      <input type="text" id="last-name" placeholder="Last Name" required />
+      <input type="email" id="email" placeholder="Email Address" required class="full" />
+      <input type="text" id="zip" placeholder="ZIP Code (optional)" />
+      <textarea id="comment" placeholder="Your message (optional)" class="full"></textarea>
+      <button type="submit" class="petition-submit">Add My Name →</button>
+    </form>
+    <div class="petition-message" id="petition-message">Thank you. Your signature has been recorded.</div>
+  </div>
 </div>
 
-<div class="rep-finder section" id="rep">
-  <p class="section-eyebrow">Contact Your Representatives</p>
-  <p class="arg-body" style="margin-bottom:1.5rem;">Enter your ZIP code to find your House representative, Senators, and the White House contact page.</p>
+<!-- REP FINDER -->
+<div class="section rep-section" id="rep">
+  <div class="section-header">
+    <div>
+      <p class="section-eyebrow">Take action</p>
+      <p class="section-title">Contact Your Representatives</p>
+    </div>
+  </div>
+  <p class="rep-intro">Enter your ZIP code to find your U.S. House member, both Senators, and the White House — then contact them directly and urge them to support clemency for Elizabeth Holmes.</p>
   <div class="zip-row">
     <input type="text" class="zip-input" id="zip-lookup" placeholder="Enter ZIP code" maxlength="5" />
-    <button class="zip-btn" onclick="findRep()">Find My Rep</button>
+    <button class="zip-btn" onclick="findRep()">Find My Reps →</button>
   </div>
   <div class="rep-cards" id="rep-cards">
     <div class="rep-card" id="card-house">
       <p class="rep-card-label">U.S. House</p>
       <p class="rep-card-title">Your Representative</p>
       <p class="rep-card-body">Contact your House member directly and urge them to support clemency for Elizabeth Holmes.</p>
-      <a id="house-link" href="#" target="_blank" class="rep-link">Find My Rep →</a>
+      <p class="rep-card-note">Your ZIP code is pre-filled — click to go directly to your representative's contact page on house.gov.</p>
+      <a id="house-link" href="#" target="_blank" class="rep-link">Find My Rep → House.gov</a>
     </div>
     <div class="rep-card" id="card-senate">
       <p class="rep-card-label">U.S. Senate</p>
       <p class="rep-card-title">Your Senators</p>
       <p class="rep-card-body">Contact both of your U.S. Senators and make your voice heard on proportional sentencing.</p>
-      <a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" class="rep-link">Find My Senators →</a>
+      <p class="rep-card-note">On the Senate page, select your state from the "Choose a state" dropdown to find and contact both of your senators.</p>
+      <a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" class="rep-link">Contact My Senators → Senate.gov</a>
     </div>
     <div class="rep-card" id="card-wh">
       <p class="rep-card-label">White House</p>
       <p class="rep-card-title">Presidential Clemency</p>
-      <p class="rep-card-body">The President has the power to commute Elizabeth Holmes's sentence. Let the White House know you're watching.</p>
+      <p class="rep-card-body">The President has the constitutional power to commute Elizabeth Holmes's sentence.</p>
+      <p class="rep-card-note">Contact the White House directly to urge the President to grant clemency for Elizabeth Holmes.</p>
       <a href="https://www.whitehouse.gov/contact/" target="_blank" class="rep-link">Contact the White House →</a>
     </div>
   </div>
 </div>
 
+<!-- NEWS -->
 <div class="section" id="news">
-  <p class="section-eyebrow">Latest Coverage</p>
-  <p class="arg-body" style="margin-bottom:1rem;">News and commentary supporting Elizabeth Holmes, updated daily.</p>
+  <div class="section-header">
+    <div>
+      <p class="section-eyebrow">Updated daily</p>
+      <p class="section-title">Latest Coverage</p>
+    </div>
+  </div>
+  <p style="font-family:'EB Garamond',serif;font-size:17px;color:var(--muted);margin-bottom:0.5rem;">News and commentary supporting Elizabeth Holmes, curated and updated daily.</p>
   <div class="news-grid" id="news-grid">
     <p class="news-empty">Loading latest coverage...</p>
   </div>
 </div>
 
-<div class="cta-section">
+<!-- FINAL CTA -->
+<div class="final-cta">
   <h2>Her children need her home.</h2>
   <p>Elizabeth Holmes is not a danger to society. She is not a flight risk. She is a mother of two young children serving a sentence that defies proportion, precedent, and basic fairness. Clemency is a path. Public pressure has always mattered.</p>
   <div class="cta-buttons">
     <a href="#petition" class="btn btn-primary">Sign the Petition</a>
-    <a href="mailto:?subject=Free%20Elizabeth%20Holmes&body=Read%20the%20case%20at%20https://freeelizabetholmes.com" class="btn btn-secondary">Share this page</a>
-    <a href="https://www.whitehouse.gov/contact/" target="_blank" class="btn btn-secondary">Contact the White House</a>
+    <a href="mailto:?subject=Free%20Elizabeth%20Holmes&body=Read%20the%20case%20at%20https://freeelizabetholmes.com" class="btn btn-outline">Share this page</a>
+    <a href="https://www.whitehouse.gov/contact/" target="_blank" class="btn btn-outline">Contact the White House</a>
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
   <span>FreeElizabethHolmes.com — Failure is not fraud.</span>
   <span>Not affiliated with Elizabeth Holmes or her legal team</span>
@@ -381,12 +583,11 @@
         },
         body: JSON.stringify(payload)
       });
-      const msg = document.getElementById('petition-message');
-      msg.style.display = 'block';
+      document.getElementById('petition-message').style.display = 'block';
       document.getElementById('petition-form').style.display = 'none';
       loadCount();
     } catch(e) {
-      btn.textContent = 'Add My Name';
+      btn.textContent = 'Add My Name →';
       btn.disabled = false;
     }
   });
