@@ -32,3 +32,15 @@ jobs:
           git add news.json
           git diff --staged --quiet || git commit -m "Refresh news"
           git push
+
+      - name: Post to Voxxee
+        run: |
+          curl -s -X POST https://xenchee.netlify.app/.netlify/functions/pipeline-post \
+            -H "Content-Type: application/json" \
+            -H "x-pipeline-secret: ${{ secrets.PIPELINE_SECRET }}" \
+            -d '{
+              "slug": "free-elizabeth-holmes",
+              "title": "⚖️ Free Elizabeth Holmes — Latest News",
+              "summary": "The latest news and updates on Elizabeth Holmes, Theranos, and the case for her freedom.",
+              "url": "https://freeelizabethholmes.com"
+            }'
